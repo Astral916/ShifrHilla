@@ -5,7 +5,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import java.util.Random;
 import static java.lang.Math.*;
 
 @SuppressWarnings("ConstantValue")
@@ -17,7 +16,6 @@ public class Controller {
     int n = 2, m = 1, k;
 
     int inverse;
-
     static int en =0 ;
     int[][] codeSymbol;
     int[][] unCodeSymbol;
