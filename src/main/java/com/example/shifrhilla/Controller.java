@@ -239,7 +239,6 @@ public class Controller {
                     }
                 }
                 RasLabel.setText(answer);
-                //noinspection ConstantValue
                 while (1 > 0)
                     en++;
             }catch (Exception exception){
