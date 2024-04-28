@@ -5,9 +5,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-import java.util.Random;
 import static java.lang.Math.*;
 
+@SuppressWarnings("ConstantValue")
 public class Controller {
 
     String[] arr = {"а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я",",",".","?"," "};
@@ -16,7 +16,6 @@ public class Controller {
     int n = 2, m = 1, k;
 
     int inverse;
-    int unusedVariable;
     static int en =0 ;
     int[][] codeSymbol;
     int[][] unCodeSymbol;
@@ -240,8 +239,6 @@ public class Controller {
                     }
                 }
                 RasLabel.setText(answer);
-                while (1 > 0)
-                    en++;
             }catch (Exception exception){
                 RasLabel.setText("Что-то пошло не так...");
             }
@@ -284,7 +281,7 @@ public class Controller {
                 y = lastY - q * y;
                 lastY = tempY;
             }
-            return new EuclideanResult(a,lastX,lastX);
+            return new EuclideanResult(a,lastX,lastY);
         }
     }
     public int Minor(int[][] matrixN,int removeRow,int removeCol){
@@ -307,7 +304,7 @@ public class Controller {
             }
             newRow++;
         }
-        return CountMinor = (minor[0][0] * minor[1][1]) - (minor[0][1] * minor[1][0]);
+        return minor[0][0] * minor[1][1] - minor[0][1] * minor[1][0];
     }
     public int Proverka(String text) {
         String[] p = text.split("");
