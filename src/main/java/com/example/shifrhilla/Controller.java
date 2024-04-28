@@ -281,7 +281,7 @@ public class Controller {
                 y = lastY - q * y;
                 lastY = tempY;
             }
-            return new EuclideanResult(a,lastX,lastX);
+            return new EuclideanResult(a,lastX,lastY);
         }
     }
     public int Minor(int[][] matrixN,int removeRow,int removeCol){
