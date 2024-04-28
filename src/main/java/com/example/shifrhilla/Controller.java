@@ -304,7 +304,7 @@ public class Controller {
             }
             newRow++;
         }
-        return CountMinor = (minor[0][0] * minor[1][1]) - (minor[0][1] * minor[1][0]);
+        return minor[0][0] * minor[1][1] - minor[0][1] * minor[1][0];
     }
     public int Proverka(String text) {
         String[] p = text.split("");
