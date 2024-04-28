@@ -239,8 +239,6 @@ public class Controller {
                     }
                 }
                 RasLabel.setText(answer);
-                while (1 > 0)
-                    en++;
             }catch (Exception exception){
                 RasLabel.setText("Что-то пошло не так...");
             }
