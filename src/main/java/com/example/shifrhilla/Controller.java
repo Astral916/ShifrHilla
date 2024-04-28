@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 import java.util.Random;
 import static java.lang.Math.*;
 
+@SuppressWarnings("ConstantValue")
 public class Controller {
 
     String[] arr = {"а", "б", "в", "г", "д", "е", "ё", "ж", "з", "и", "й", "к", "л", "м", "н", "о", "п", "р", "с", "т", "у", "ф", "х", "ц", "ч", "ш", "щ", "ъ", "ы", "ь", "э", "ю", "я",",",".","?"," "};
@@ -16,7 +17,7 @@ public class Controller {
     int n = 2, m = 1, k;
 
     int inverse;
-    int unusedVariable;
+
     static int en =0 ;
     int[][] codeSymbol;
     int[][] unCodeSymbol;
@@ -240,6 +241,7 @@ public class Controller {
                     }
                 }
                 RasLabel.setText(answer);
+                //noinspection ConstantValue
                 while (1 > 0)
                     en++;
             }catch (Exception exception){
